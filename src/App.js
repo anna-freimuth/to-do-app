@@ -1,16 +1,16 @@
 import React from "react";
+import Form from "./components/Form";
+import ToDoList from "./components/ToDoList";
 
 function App() {
     return (
-        <div className="App">
+        <div className="container pt-4">
+            <h2 className="text-center">To Do List Application</h2>
             <section id="form">
-                <input type="text" name="" id=""/>
-                <button>Add</button>
+                <Form/>
             </section>
-            <section id="list">
-                <ul>
-                    <li>To-Do Item<span>Actions(complete,delete)</span></li>
-                </ul>
+            <section id="list-wrapper">
+               <ToDoList />
             </section>
         </div>
     );
